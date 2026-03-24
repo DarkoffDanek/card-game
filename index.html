@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Card Auto Battle</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div id="app">
+  <div id="leftPanel">
+    <h2>Магазин</h2>
+    <div id="gold">Золото: 0</div>
+
+    <button onclick="buyChest('common')">Обычный сундук (100)</button>
+    <button onclick="buyChest('rare')">Редкий сундук (300)</button>
+
+    <h3>Коллекция</h3>
+    <div id="collection"></div>
+  </div>
+
+  <div id="rightPanel">
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="controls">
+      <div id="energy">Энергия: 0</div>
+      <button onclick="startBattle()">Бой</button>
+    </div>
+  </div>
+</div>
+
+<script src="js/cards.js"></script>
+<script src="js/storage.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/battle.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/game.js"></script>
+<script src="main.js"></script>
+
+</body>
+</html>
